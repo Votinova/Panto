@@ -1,7 +1,7 @@
 .info-hint {
     width: 112px;
     height: 56px;
-    background-image: url('../../img/icons/Union.svg');
+    background-image: url('../img/icons/Union.svg');
     display: flex;
     gap: 8px;
     justify-content: center;
@@ -14,7 +14,7 @@
 }
 
 .info-hint-radio:checked + .info-hint-fake{
-    background-image: url('../../img/icons/bi_check.svg');
+    background-image: url('../img/icons/bi_check.svg');
 }
 .info-hint-radio {
    clip: rect(0, 0, 0, 0);

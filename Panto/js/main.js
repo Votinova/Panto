@@ -1,11 +1,11 @@
 const infoButtons = document.querySelectorAll('.info-dot');
 const infoHints = document.querySelectorAll('.info-hint');
-
 for (let btn of infoButtons) {
-    btn.addEventListener('click', (e) => {
-        e.stopPropagation();
+    btn.addEventListener('click', function (e){
+        e.stopPropagation();      
         this.parentNode.querySelector('.info-hint').classList.toggle('none')
     })
+
 }
 
 document.addEventListener('click', () => {

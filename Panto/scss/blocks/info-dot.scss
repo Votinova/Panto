@@ -25,7 +25,6 @@
     border:  0.86px solid #fff;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(4px);
     animation: pulse 1s infinite alternate;
 }
 .info-dot:hover .info-dot-radius {
