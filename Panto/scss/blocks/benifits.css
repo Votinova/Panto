@@ -1,0 +1,54 @@
+:root {
+  --text-color: #1E1E1E;
+  --accent: #E58411;
+  --header-text-color: #FFFFFF;
+  --text-muted: #8D8D8D;
+  --text-cart-title: #0D1B39;
+  --footer-accent: #F6973F;
+  --footer-bg: #2D2F33;
+  --ui-biruza: #00D6C9;
+  --ui-gray: #7C7C7C;
+  --ui-orange: #E58411;
+  --ui-dark-blue: #0D1B39;
+  --font-main: "Gilroy", sans-serif;
+  --font-cards: "Inter", sans-serif;
+  --font-footer-accent: "DM sans", sans-serif;
+}
+
+.benifits {
+  padding: 120px 0;
+}
+
+.benifits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.benifits-title {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.benifit-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.benifit-text {
+  margin-bottom: 14px;
+  opacity: 0.8;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.benifit-link {
+  display: inline-flex;
+  gap: 13px;
+  align-items: center;
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.85;
+}/*# sourceMappingURL=benifits.css.map */

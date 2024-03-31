@@ -1,0 +1,40 @@
+
+@import '../base//vars';
+
+.benifits {
+    padding: 120px 0;
+}
+.benifits-grid {
+    display:  grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.benifits-title {
+    font-size: 42px;
+    font-weight: 700;
+
+}
+.benifit {
+
+}
+.benifit-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+}
+.benifit-text {
+    margin-bottom: 14px;
+    opacity: 0.8;
+    font-size: 16px;
+    line-height: 1.85;
+}
+.benifit-link {
+    display: inline-flex;
+    gap: 13px;
+    align-items: center;
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.85;
+    
+}

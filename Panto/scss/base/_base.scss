@@ -5,6 +5,9 @@ html, body {
     font-family: var(--font-main);
     color: var(--text-color);
 }
+body {
+    padding-bottom: 50vh;
+}
 .contanier {
     max-width: 1310px;
     padding: 0 15px;
