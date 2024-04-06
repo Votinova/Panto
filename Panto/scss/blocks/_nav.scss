@@ -27,11 +27,9 @@
     justify-self: end;
     position: relative;
 }
-.cart-img {   
-}
 .cart-count {
     position: absolute;
-    right: -6px;
+    left: 12px;
     top: 3px;
     background-color: var(--accent);
     border-radius: 50%;
