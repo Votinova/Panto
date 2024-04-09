@@ -16,33 +16,19 @@
   --font-footer-accent: "DM sans", sans-serif;
 }
 
-.produts {
-  background-color: #F7F7F7;
-  padding: 50px 0;
+.sub-nuv {
+  display: grid;
+  gap: 16px;
+  color: #FFF;
+  padding: 20px;
+  border-radius: 16px;
+  font-size: 16px;
+  background-color: var(--footer-bg);
 }
-
-.products-title {
-  margin-bottom: 32px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 42px;
+.sub-nuv a {
+  color: #FFF;
+  transition: color 0.1s ease-in;
 }
-
-.products-tabs {
-  margin-bottom: 80px;
-  text-align: center;
-}
-
-.products-slider {
-  margin-bottom: 60px;
-}
-
-.products-link {
-  text-align: center;
-}
-.products-link a {
+.sub-nuv a:hover {
   color: var(--accent);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.85;
-}/*# sourceMappingURL=products.css.map */
+}/*# sourceMappingURL=subnav.css.map */

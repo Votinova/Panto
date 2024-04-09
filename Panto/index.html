@@ -9,13 +9,26 @@
 </head>
 <body>
    <header class="header">
-    <div class="contanier">
+    <div class="contanier-header">
         <div class="header-nav">
             <nav class="nav">
                 <a href="#" class="logo">Panto</a>
                 <ul class="nav-list">
                     <li class="nav-list-item">
-                        <a href="#!" class="nav-list-link">Furniture</a>
+                        <a href="#!" class="nav-list-link nav-list-link--dropdown">Furniture</a>
+                        <div class="nav-list-subnav">
+                            <ul class="sub-nuv">
+                                <li class="sub-nuv-link">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li class="sub-nuv-link">
+                                    <a href="#">Services</a></li>
+                                <li class="sub-nuv-link">
+                                    <a href="#">Products</a></li>
+                                <li class="sub-nuv-link">
+                                    <a href="#">Contacts</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="nav-list-item">
                         <a href="#!" class="nav-list-link">Shop</a>
@@ -32,7 +45,10 @@
                         <img src="./img/icons/Bag.svg" class="cart-img" alt="">
                         <div class="cart-count">0</div>
                     </a>
-                </div>       
+                </div> 
+                <button title="nav-mobile" class="nav-button">
+                    <img src="./img/icons/nav.svg" alt="">
+                </button>      
             </nav>
         </div>      
         <div class="header-content">
@@ -147,6 +163,50 @@
                 </label>
             </div>       
         </div>
+    </div>
+    <div class="mobile-nav-wrapper">
+        <div class="mobile-cart">
+            <div class="cart">
+                <a href="#!">
+                    <img src="./img/icons/Bag.svg" class="cart-img" alt="">
+                    <div class="cart-count">0</div>
+                </a>
+            </div>
+            <button class="mobile-nav-btn-close">
+                <img src="./img/icons/close.svg" alt=" lose-navigation">
+            </button>
+        </div>
+        <ul class="mobile-nav">
+            <li class="mobile-nav-item">  
+                <a href="#!" class="mobile-nav-link mobile-nav-link--dropdown">Furniture</a>
+                    <div class="mobile-subnav">
+                        <ul class="mobile-sub-nuv">
+                            <li class="mobile-sub-nuv-link">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="mobile-sub-nuv-link">
+                                <a href="#">Services</a>
+                            </li>
+                            <li class="mobile-sub-nuv-link">
+                                <a href="#">Products</a>
+                            </li>
+                            <li class="mobile-sub-nuv-link">
+                                <a href="#">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="#!" class="mobile-nav-link">Shop</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="#!" class="mobile-nav-link">About Us</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="#!" class="mobile-nav-link">Contact</a>
+            </li>
+        </ul>
     </div>
    </header>
    <section class="benifits">
@@ -421,6 +481,54 @@
         </div>
     </div>
 
+   </section>
+   <section class="footer">
+    <div class="container container-small">
+        <div class="footer-grid">
+            <div class="footer-desc">
+                <a href="#" class="link-logo">Panto</a>
+                <p>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
+            </div>
+            <nav class="footer-services">
+               <h3 class="footer-nav-title">Services</h3>
+               <ul class="footer-list">
+                <li class="footer-list-item">
+                    <a href="#">Email Marketing</a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="#">Campaigns</a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="#">Branding</a>
+                </li>
+               </ul>
+            </nav>
+            <div class="footer-nav">
+                <nav class="footer-nav">
+                    <h3 class="footer-nav-title">Furniture</h3>
+                    <ul class="footer-list">
+                     <li class="footer-list-item">
+                         <a href="#">Beds</a>
+                     </li>
+                     <li class="footer-list-item">
+                         <a href="#">Chair</a>
+                     </li>
+                     <li class="footer-list-item">
+                         <a href="#">All</a>
+                     </li>
+                    </ul>
+                 </nav>
+                </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-copypight">Copyright © 2024</div>
+            <div class="footer-links">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+        </div>
+    </div>
    </section>
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <script src="./js/main.js"></script>

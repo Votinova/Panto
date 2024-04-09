@@ -1,3 +1,4 @@
+@import '../base/vars';
 .nav {
     display: grid;
     grid-template-columns: 2fr 8fr 2fr;
@@ -6,12 +7,10 @@
 }
 .logo {
     align-self: center;
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 0.28px;
-    text-transform: capitalize;
+
 }
 .nav-list {
+    position: relative;
     justify-self: center;
     align-self: center;
     font-weight: 500;
@@ -21,15 +20,20 @@
     align-items: center;
     gap: 65px;
     justify-content: center;
+    
+    @include tablet() {
+        display: none;
+    }
 }
 .cart {
+    display: flex;
     align-self: center;
-    justify-self: end;
+    justify-content: end;
     position: relative;
 }
 .cart-count {
     position: absolute;
-    left: 12px;
+    right: 2px;
     top: 3px;
     background-color: var(--accent);
     border-radius: 50%;
@@ -40,4 +44,40 @@
     line-height: 25px;
     font-weight: 700;
     font-family: var(--font-cards);
+}
+
+.nav-button {
+    display: none;
+    @include tablet() {
+        display: block;
+    }
+}
+.nav-list-link {
+    transition: opacity 0.2s ease-in;
+    &:hover{
+        opacity: 0.8;
+    }
+    &--dropdown {
+        gap: 8px;
+        display: flex;
+        &::after {
+            content: url('../img/icons/eva_arrow-ios-back-outline.svg');
+            height: 10px;
+        }
+    }
+}
+.nav-list-subnav {
+    opacity: 0;
+    width: 170px;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    transform: translate(0%, 10%);
+    transition: all 0.2s ease-in;
+}
+.nav-list-item:hover .nav-list-subnav {
+    pointer-events: all;
+    display: block;
+    opacity: 1;
+    transform: translate(0%, 0%);
 }
