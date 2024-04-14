@@ -1,4 +1,6 @@
 .slider {
+  margin: 0 auto;
+  max-width: 1168px;
   justify-content: center;
   position: relative;
 }
@@ -19,24 +21,20 @@
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translate(150%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .slider-button--next {
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translate(-150%, -50%);
+  transform: translate(50%, -50%);
 }
 
 .slider-button:hover {
   opacity: 0.8;
 }
 
-.swiper {
-  max-width: 1198px;
-}
-
 .swiper-slide {
-  max-width: 268px;
+  width: 268px;
 }/*# sourceMappingURL=slider.css.map */

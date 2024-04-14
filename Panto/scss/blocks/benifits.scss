@@ -3,27 +3,32 @@
 
 .benifits {
     padding: 120px 0;
-    margin-left: 80px;
+    margin-left: clamp(1.25rem, 0.179rem + 5.36vw, 5rem);
 }
 .benifits-grid {
     display:  grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    @include mobile-xl () {
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+        gap: 60px 20px;
+    }
+   
 }
 .benifits-title {
-    font-size: 42px;
+    font-size: clamp(1.875rem, 1.661rem + 1.07vw, 2.625rem);
     font-weight: 700;
 
 }
 .benifit-title {
     margin-bottom: 20px;
     font-weight: 700;
-    font-size: 24px;
+    font-size: clamp(1rem, 0.857rem + 0.71vw, 1.5rem);
 }
 .benifit-text {
     margin-bottom: 14px;
     opacity: 0.8;
-    font-size: 16px;
+    font-size: clamp(0.75rem, 0.679rem + 0.36vw, 1rem);
     line-height: 1.85;
 }
 .benifit-link {
@@ -32,7 +37,6 @@
     align-items: center;
     color: var(--accent);
     font-weight: 500;
-    font-size: 18px;
-    line-height: 1.85;
-    
+    font-size: clamp(0.875rem, 0.804rem + 0.36vw, 1.125rem);
+    line-height: 1.85; 
 }

@@ -39,6 +39,8 @@
 }
 .cart-photo img {
   margin-top: -50px;
+  max-width: 255px;
+  max-height: 217px;
 }
 
 .cart-text {

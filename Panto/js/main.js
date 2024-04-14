@@ -24,26 +24,23 @@ document.addEventListener('click', () => {
     }
  })
 
- //swiper-slider
-
- const swiper = new Swiper('.swiper', {
-    slidesPerView: 4,
+ var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
     spaceBetween: 42,
-    freeMode: true,
-    // breakpoints: {
-    //     640: {
-    //       slidesPerView: 2,
-    //       spaceBetween: 20,
-    //     },
-    //     768: {
-    //       slidesPerView: 4,
-    //       spaceBetween: 40,
-    //     },
-    //     1024: {
-    //       slidesPerView: 5,
-    //       spaceBetween: 50,
-    //     },
-    //   },
+    breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+        1230: {
+            slidesPerView: 4,
+            spaceBetween: 42
+        }
+      },
     navigation: {
         nextEl: '.slider-button--next',
         prevEl: '.slider-button--prev',

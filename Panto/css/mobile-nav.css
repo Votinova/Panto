@@ -18,9 +18,10 @@
 
 .mobile-nav-wrapper {
   display: none;
-  background-color: var(--footer-bg);
+  background-color: #2D2F33;
   padding: 30px 20px;
   color: var(--footer-text-color);
+  height: clamp(380px, 10.924rem + 64.13vw, 700px);
   position: absolute;
   top: 0;
   right: 0;

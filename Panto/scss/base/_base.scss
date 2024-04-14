@@ -20,7 +20,7 @@ body {
 }
 .container-small {
     max-width: 1200px;
-    padding-left: 188px;
+    padding-left: clamp(1.875rem, -0.946rem + 14.11vw, 11.75rem);
 }
 .none {
     display: none !important;

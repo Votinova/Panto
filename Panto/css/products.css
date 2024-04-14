@@ -16,41 +16,33 @@
   --font-footer-accent: "DM sans", sans-serif;
 }
 
-.benifits {
-  padding: 120px 0;
-  margin-left: 80px;
+.produts {
+  background-color: #F7F7F7;
+  padding: 50px 0;
 }
 
-.benifits-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.benifits-title {
-  font-size: 42px;
+.products-title {
+  margin-bottom: 32px;
+  text-align: center;
   font-weight: 700;
+  font-size: clamp(1.063rem, 0.616rem + 2.23vw, 2.625rem);
 }
 
-.benifit-title {
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 24px;
+.products-tabs {
+  margin-bottom: 80px;
+  text-align: center;
 }
 
-.benifit-text {
-  margin-bottom: 14px;
-  opacity: 0.8;
-  font-size: 16px;
-  line-height: 1.85;
+.products-slider {
+  margin-bottom: 60px;
 }
 
-.benifit-link {
-  display: inline-flex;
-  gap: 13px;
-  align-items: center;
+.products-link {
+  text-align: center;
+}
+.products-link a {
   color: var(--accent);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.85;
-}/*# sourceMappingURL=benifits.css.map */
+}/*# sourceMappingURL=products.css.map */

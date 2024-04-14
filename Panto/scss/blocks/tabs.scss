@@ -8,7 +8,7 @@
 }
 .tab-control-btn {
     display:  flex;
-    height: 45px;
+    height: clamp(1.875rem, 1.607rem + 1.34vw, 2.813rem);
     padding: 7px 20px;
     justify-content: center;
     align-items: center;

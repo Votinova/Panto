@@ -11,12 +11,12 @@
     a {
         color: var(--header-text-color);
     }
-    @include tablet() {
+    @include mobile-xl() {
         position: static;
     }
 }
 .header-nav {
-    margin-bottom: 86px;
+    margin-bottom: clamp(20px, 0.071rem + 5.89vw, 86px)
 }
 .header-content {
     text-align: center;
@@ -24,7 +24,8 @@
 .header-title {
     margin-bottom: 14px;
     font-weight: 700;
-    font-size: 80px;
+    font-size: clamp(28px , 0.821rem + 4.64vw, 80px);
+    text-wrap: balance;
     line-height: 130%;
     letter-spacing: -0.8px;
     text-align: center;
@@ -33,37 +34,39 @@
 .header-content p {
     max-width: 606px;
     margin: 0 auto;
-    font-size: 24px;
     line-height: 160%;
     font-weight: 400;
     opacity: 0.8;
+    font-size: clamp(16px , 0.857rem + 0.71vw, 24px);
+    text-wrap: balance;
 }
 .header-search {
     display: flex;
     margin-top: 45px auto 0;
     justify-content: center;
 }
-
-.header-dot-sofa {
+.header-dot {
     position: absolute;
+    @include mobile-xl () {
+        display: none;
+    }
+}
+.header-dot--sofa {
     left:  calc(296 * 100% / 1440);
     top: calc(685 * 100% / 1084);
     transform: translate(-20%, -20%);
 }
-.header-dot-vase {
-    position: absolute;
+.header-dot--vase {
     top: calc(743 * 100% / 1084);
     left: calc(103 * 100% / 1440);
     transform: translate(-50%, -50%);
 }
-.header-dot-item {
-    position: absolute;
+.header-dot--item {
     top: calc(777 * 100% / 1084);
     left: calc(800 * 100% / 1440);
     transform: translate(-50%, -50%);
 }
-.header-dot-wall {
-    position: absolute;
+.header-dot--wall {
     top: calc(809 * 100% / 1084);
     left: calc(1369 * 100% / 1440);
     transform: translate(-50%, -50%);

@@ -1,0 +1,62 @@
+:root {
+  --text-color: #1E1E1E;
+  --accent: #E58411;
+  --header-text-color: #FFFFFF;
+  --text-muted: #8D8D8D;
+  --text-cart-title: #0D1B39;
+  --footer-accent: #F6973F;
+  --footer-bg: #2D2F33;
+  --footer-text-color: rgba(255, 255, 255, 0.8);
+  --ui-biruza: #00D6C9;
+  --ui-gray: #7C7C7C;
+  --ui-orange: #E58411;
+  --ui-dark-blue: #0D1B39;
+  --font-main: "Gilroy", sans-serif;
+  --font-cards: "Inter", sans-serif;
+  --font-footer-accent: "DM sans", sans-serif;
+}
+
+.benifits {
+  padding: 120px 0;
+  margin-left: clamp(1.25rem, 0.179rem + 5.36vw, 5rem);
+}
+
+.benifits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+@media (max-width: 819px) {
+  .benifits-grid {
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 60px 20px;
+  }
+}
+
+.benifits-title {
+  font-size: clamp(1.875rem, 1.661rem + 1.07vw, 2.625rem);
+  font-weight: 700;
+}
+
+.benifit-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: clamp(1rem, 0.857rem + 0.71vw, 1.5rem);
+}
+
+.benifit-text {
+  margin-bottom: 14px;
+  opacity: 0.8;
+  font-size: clamp(0.75rem, 0.679rem + 0.36vw, 1rem);
+  line-height: 1.85;
+}
+
+.benifit-link {
+  display: inline-flex;
+  gap: 13px;
+  align-items: center;
+  color: var(--accent);
+  font-weight: 500;
+  font-size: clamp(0.875rem, 0.804rem + 0.36vw, 1.125rem);
+  line-height: 1.85;
+}/*# sourceMappingURL=benifits.css.map */
