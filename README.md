@@ -11,4 +11,4 @@
 
 
 
-[сайт](https://votinova.github.io/Panto/#!)
+[Открыть сайт](https://votinova.github.io/Panto/#!)
