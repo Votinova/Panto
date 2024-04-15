@@ -9,3 +9,6 @@
 
  Реализован свайпер товаров при помощи библиотеки Swiper JS
 
+
+
+[сайт](https://votinova.github.io/Panto/#!)
